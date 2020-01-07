@@ -17,6 +17,7 @@ template<class T>
 class CatalogIndividual
 {
 	int nr_matricol;
+	int nr_quizzuri ;
 public:
 	int get_nr_matricol() const;
 private:
@@ -42,6 +43,7 @@ public:
 	{
 		this->nr_matricol = idx_nr_matricol++;
 		this->nr_examene_student = 0;
+		this->nr_quizzuri = 0;
 	};
 
 	void citire()
@@ -166,6 +168,7 @@ public:
 			}
 			else
 			{
+				this->nr_quizzuri = this->nr_quizzuri + 1;
 				cout << endl << "Pentru ce materie doriti marire?" << endl;
 				
 				while (1) {
@@ -279,5 +282,8 @@ int CatalogIndividual<T>::get_nr_matricol() const
 template<>
 class CatalogIndividual<Quizz>
 {
-	
+	void operator+=(Quizz* ob)
+	{
+		
+	}
 };
