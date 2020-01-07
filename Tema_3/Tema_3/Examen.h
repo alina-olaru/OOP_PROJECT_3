@@ -9,6 +9,13 @@ static int increment_id = 1;
 
 static std::vector<std::string> nume_examene{ "Necunoscut" };
 
+
+
+
+
+
+//Examen este clasa de baza din care se deriveaza clasele
+//Examen_final,Partial si Quizz
 class Examen
 
 {
@@ -27,8 +34,11 @@ public:
 	Examen(std::string, float);
 	Examen();
 	//~Examen();
-	
+
+	//functia de citire
 	virtual void citire();
+	//functia de citire_cu_denumire este apelata pentru citirea datelor despre
+	//partial si examen final (pentru a nu introduce numele examenului la fiecare nota)
 	virtual void citire_cu_denumire(std::string);
 	virtual void afis();
 	
