@@ -77,10 +77,11 @@ int main()
 
 	
 	Facultate* facultate = new Facultate(nr_studenti_fac);
-//facultate->redare_partial();
-//	facultate->calcul_note_finale();
-	//facultate->afisare_picati();
+facultate->redare_partial();
+facultate->calcul_note_finale();
+	facultate->afisare_picati();
 	facultate->afis();
+	facultate->afis_q();
 	
 	
 	

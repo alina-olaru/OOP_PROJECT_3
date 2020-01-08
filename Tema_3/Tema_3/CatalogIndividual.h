@@ -467,6 +467,7 @@ public:
 
 
 	};
+};
 
 	template <class T>
 	int CatalogIndividual<T>::get_nr_matricol() const
@@ -763,4 +764,3 @@ public:
 
 
 	};
-};

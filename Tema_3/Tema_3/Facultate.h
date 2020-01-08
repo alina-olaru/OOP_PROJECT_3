@@ -32,6 +32,7 @@ public:
 	void calcul_note_finale();
 	void afisare_picati();
 	void afis();
+	void afis_q();
 
 };
 

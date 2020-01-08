@@ -80,3 +80,9 @@ void Facultate::afis()
 		x.afisare();
 	}
 }
+
+void Facultate::afis_q()
+{
+	cout << "Nr studenti cu >2 quiz-uri" << endl;
+	cout<<endl << CatalogIndividual<Examen>::nr_studenti_quizz << endl;
+}
